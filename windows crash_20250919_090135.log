@@ -1,0 +1,37 @@
+windows crash_20250919_090135.log - 記事本 (Protected by Curtain e-locker)
+
+編碼: 編碼頁 - 950 (繁體中文)
+建立時間: 2025-09-19 09:01:35, 69501
+Python版本: 3.11.3 | packaged by Anaconda, Inc. | (main, Apr 19 2023, 23:46:34) [MSC v.1916 64 bit (AMD64)]
+執行路徑: C:\ProgramData\Anaconda3\python.exe
+執行環境: False
+
+Windows fatal exception: code 0x80000003
+
+Thread 0x0000d0c (most recent call first):
+  File "C:\ProgramData\Anaconda3\Lib\concurrent\futures\thread.py", line 81 in _worker
+  File "C:\ProgramData\Anaconda3\Lib\threading.py", line 975 in run
+  File "C:\ProgramData\Anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+  File "C:\ProgramData\Anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Current thread 0x00005ed4 (most recent call first):
+  Garbage-collecting
+  File "C:\ProgramData\Anaconda3\Lib\json\decoder.py", line 353 in raw_decode
+  File "C:\ProgramData\Anaconda3\Lib\json\__init__.py", line 337 in loads
+  File "C:\ProgramData\Anaconda3\Lib\json\__init__.py", line 346 in load
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\api.py", line 248 in load_compressed_file
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\api.py", line 261 in load_baseline
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\api.py", line 271 in compare_excel_changes
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\api.py", line 557 in dispatch_events
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 272 in dispatch
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 199 in run
+  File "C:\ProgramData\Anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+  File "C:\ProgramData\Anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Thread 0x0000126c (most recent call first):
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 391 in read_directory_changes
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 391 in read_events
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 80 in _read_events
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 148 in run
+  File "C:\ProgramData\Anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+  File "C:\ProgramData\Anaconda3\Lib\threading.py", line 995 in _bootstrap
